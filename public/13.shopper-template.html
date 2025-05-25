@@ -9,7 +9,7 @@
         header{
             font-family: Arial;
             font-size: 16px;
-            padding: 20px;
+            
             
         }
         .row-1{
@@ -44,6 +44,70 @@
         }
         .row-2 nav{
             font-size: 18px;
+        }
+        article{
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .bi-lightning-fill{
+            color: gold;
+        }
+        main{
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+            height: 450px;
+        }
+        .women-fashion{
+            background-image: url("images/women-fashion.png");
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            opacity: 0.7;
+        }
+        .men-fashion{
+            background-image: url("images/men-fashion");
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            opacity: 0.7;
+        }
+        .kid-fashion{
+            background-image: url("images/kids-fashion.png");
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            opacity: 0.7;
+        }
+        .main-title{
+            color: white;
+            font-size: 50px;
+            font-weight: bold;
+            font-family: Arial;
+            text-shadow: 2px 2px 2px black;
+        }
+        .btn-shop{
+            background-color: white;
+            padding: 15px;
+            width: 120px;
+            text-align: center;
+        }
+        .women-fashion:hover{
+            opacity: 1;
+        }
+        .men-fashion:hover{
+            opacity: 1;
+        }
+        .kid-fashion:hover{
+            opacity: 1;
         }
 
     </style>
@@ -96,5 +160,26 @@
             </div>
         </div>
     </header>
+    <section>
+        <article>
+            <span class="bi bi-lightning-fill"></span>
+            <span>HAPPY HOLIDAY DEALS ON EVERYTHING</span>
+            <span class="bi bi-lightning-fill"></span>
+        </article>
+        <main>
+            <div class="women-fashion">
+                <div class="main-title">Womens</div>
+                <div class="btn-shop">Shop Women <span class="bi bi-arrow-right"></span></div>
+            </div>
+            <div class="men-fashion">
+                <div class="main-title">Mens</div>
+                <div class="btn-shop">Shop Men <span class="bi bi-arrow-right"></span></div>
+            </div>
+            <div class="kid-fashion">
+                <div class="main-title">Kids</div>
+                <div class="btn-shop">Shop Kid <span class="bi bi-arrow-right"></span></div>
+            </div>
+        </main>
+    </section>
 </body>
 </html>
